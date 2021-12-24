@@ -66,7 +66,7 @@ metadata.create_all(engine)
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 app = FastAPI(
-    docs_url="/docs",
+    docs_url="/",
     redoc_url="/redocs",
     title="Fart-API postgreSQL",
     description="Привіт",
@@ -83,10 +83,6 @@ async def startup():
 @app.on_event("shutdown")
 async def shutdown():
     await database.disconnect()
-
-@app.get("/")
-async def root():
-    return {"message": "Дарова!"}
 
 
 
