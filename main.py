@@ -15,7 +15,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 
 
-DATABASE_URL = "postgresql://kxcmhbkhvyyfel:bcea7a52633f6d2b8278c4880343774c2166835491d099bc28e3300e7d1ca5ba@ec2-52-213-119-221.eu-west-1.compute.amazonaws.com:5432/d7c6o4a367jfbo"
+DATABASE_URL = "postgres://pqsfcpgqvzwtqv:5b904869c59ba5764235fcd69df2cc953f3f34a4dada5d852e7028707d768f3a@ec2-54-229-47-120.eu-west-1.compute.amazonaws.com:5432/dd6tnuj80bfg6v"
 
 database = databases.Database(DATABASE_URL)
 
